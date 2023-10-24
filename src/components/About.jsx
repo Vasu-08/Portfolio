@@ -1,6 +1,3 @@
-/* eslint-disable react-refresh/only-export-components */
-/* eslint-disable react/no-unknown-property */
-
 import {Tilt} from 'react-tilt';
 import {motion} from 'framer-motion';
 
@@ -10,19 +7,19 @@ import {SectionWrapper} from '../hoc';
 import {fadeIn, textVariant} from '../utils/motion';
 
 const ServiceCard = ({index, title, icon}) => (
-  <Tilt className='xs:w-[250px] w-full'>
+  <Tilt
+    className='xs:w-[250px] w-full'
+    options={{
+      max: 45,
+      scale: 1,
+      speed: 450
+    }}
+  >
     <motion.div
       variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
     >
-      <div
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450
-        }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
-      >
+      <div className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'>
         <img
           src={icon}
           alt='web-development'
@@ -49,11 +46,11 @@ const About = () => {
         variants={fadeIn('', '', 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I&aposm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I&aposm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let&aposs work together to bring your ideas to life!
+        I&apos;m a skilled software developer with experience in JavaScript, and
+        expertise in frameworks like React, Node.js, and Three.js. I&apos;m a
+        quick learner and collaborate closely with clients to create efficient,
+        scalable, and user-friendly solutions that solve real-world problems.
+        Let&apos;s work together to bring your ideas to life!
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

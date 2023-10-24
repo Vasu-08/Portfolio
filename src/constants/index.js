@@ -15,12 +15,9 @@ import {
   nodejs,
   mongodb,
   git,
-  figma,
   docker,
-  meta,
   starbucks,
   tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
@@ -44,7 +41,7 @@ export const navLinks = [
 
 const services = [
   {
-    title: 'Web Developer',
+    title: 'Open Source Developer',
     icon: web
   },
   {
@@ -56,7 +53,7 @@ const services = [
     icon: backend
   },
   {
-    title: 'Content Creator',
+    title: 'Bitcoin Developer',
     icon: creator
   }
 ];
@@ -107,10 +104,6 @@ const technologies = [
     icon: git
   },
   {
-    name: 'figma',
-    icon: figma
-  },
-  {
     name: 'docker',
     icon: docker
   }
@@ -118,76 +111,49 @@ const technologies = [
 
 const experiences = [
   {
-    title: 'React.js Developer',
-    company_name: 'Starbucks',
+    title: 'Engineering Intern',
+    company_name: 'UpTroop',
     icon: starbucks,
     iconBg: '#383E56',
-    date: 'March 2020 - April 2021',
+    date: 'March 2023 - May 2023',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.'
+      'Developed and integrated APIs for advanced statistical analysis, enabling real-time insights for decision-making',
+      'Developed and implemented frontend dashboard components using Recharts library, showcasing visualizations tools such as bar and pie charts; improved data analysis capabilities and facilitated decision-making process for the clients.',
+      'Skills - Nodejs, ReactJs, Azure, CosmosDB, Javascript, Recharts, Material-UI',
     ]
   },
   {
-    title: 'React Native Developer',
-    company_name: 'Tesla',
+    title: 'Software Developer',
+    company_name: 'Summer of Bitcoin (Bcoin)',
     icon: tesla,
     iconBg: '#E6DEDD',
-    date: 'Jan 2021 - Feb 2022',
+    date: 'May 2023 - Aug 2023',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.'
-    ]
-  },
-  {
-    title: 'Web Developer',
-    company_name: 'Shopify',
-    icon: shopify,
-    iconBg: '#383E56',
-    date: 'Jan 2022 - Jan 2023',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.'
-    ]
-  },
-  {
-    title: 'Full stack Developer',
-    company_name: 'Meta',
-    icon: meta,
-    iconBg: '#E6DEDD',
-    date: 'Jan 2023 - Present',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.'
+      '45 out of 10k+ applicants chosen for 24 open-source bitcoin organizations all over the world',
+      'Spearheaded the integration of output script descriptors within the bcoin organization, successfully rolling out vital RPCs: getdescriptorinfo and deriveaddresses.',
+      'Leveraged the bmocha testing framework to conduct rigorous unit testing on both the descriptor module and RPCs, achieving an impressive code coverage of over 90%',
+      'Skills - Javascript, Nodejs, Git.'
     ]
   }
 ];
 
 const testimonials = [
   {
-    testimonial: 'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
+    testimonial: 'I thought it was impossible to make a website as beautiful as our product, but Vasu proved me wrong.',
     name: 'Sara Lee',
     designation: 'CFO',
     company: 'Acme Co',
     image: 'https://randomuser.me/api/portraits/women/4.jpg'
   },
   {
-    testimonial: "I've never met a web developer who truly cares about their clients' success like Rick does.",
+    testimonial: "I've never met a web developer who truly cares about their clients' success like Vasu does.",
     name: 'Chris Brown',
     designation: 'COO',
     company: 'DEF Corp',
     image: 'https://randomuser.me/api/portraits/men/5.jpg'
   },
   {
-    testimonial: "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    testimonial: "After Vasu optimized our website, our traffic increased by 50%. We can't thank them enough!",
     name: 'Lisa Wang',
     designation: 'CTO',
     company: '456 Enterprises',
@@ -197,8 +163,8 @@ const testimonials = [
 
 const projects = [
   {
-    name: 'Car Rent',
-    description: 'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+    name: 'Amazon Price Tracking Chatbot',
+    description: 'Developed a backend system for tracking and notifying users of price drops for Amazon products.',
     tags: [
       {
         name: 'react',
@@ -214,7 +180,7 @@ const projects = [
       }
     ],
     image: carrent,
-    source_code_link: 'https://github.com/'
+    source_code_link: 'https://github.com/Vasu-08/E-Commerce-Price-Tracker'
   },
   {
     name: 'Job IT',
@@ -229,7 +195,7 @@ const projects = [
         color: 'green-text-gradient'
       },
       {
-        name: 'scss',
+        name: 'twilio',
         color: 'pink-text-gradient'
       }
     ],
