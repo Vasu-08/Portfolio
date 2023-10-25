@@ -1,27 +1,24 @@
-// mock data for testing
- 
 import {
   mobile,
   backend,
-  creator,
   web,
   javascript,
-  typescript,
   html,
   css,
   reactjs,
   redux,
+  azure,
+  cplusplus,
+  express,
   tailwind,
   nodejs,
   mongodb,
   git,
-  docker,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
-  threejs
+  priceTracker,
+  incomeTracker,
+  threejs,
+  sob,
+  uptroop
 } from '../assets';
 
 export const navLinks = [
@@ -31,7 +28,11 @@ export const navLinks = [
   },
   {
     id: 'work',
-    title: 'Work'
+    title: 'Work Experience'
+  },
+  {
+    id: 'projects',
+    title: 'Projects'
   },
   {
     id: 'contact',
@@ -54,7 +55,7 @@ const services = [
   },
   {
     title: 'Bitcoin Developer',
-    icon: creator
+    icon: sob
   }
 ];
 
@@ -72,12 +73,12 @@ const technologies = [
     icon: javascript
   },
   {
-    name: 'TypeScript',
-    icon: typescript
-  },
-  {
     name: 'React JS',
     icon: reactjs
+  },
+  {
+    name: 'Express JS',
+    icon: express
   },
   {
     name: 'Redux Toolkit',
@@ -104,8 +105,12 @@ const technologies = [
     icon: git
   },
   {
-    name: 'docker',
-    icon: docker
+    name: 'c++',
+    icon: cplusplus
+  },
+  {
+    name: 'azure',
+    icon: azure
   }
 ];
 
@@ -113,19 +118,19 @@ const experiences = [
   {
     title: 'Engineering Intern',
     company_name: 'UpTroop',
-    icon: starbucks,
+    icon: uptroop,
     iconBg: '#383E56',
     date: 'March 2023 - May 2023',
     points: [
       'Developed and integrated APIs for advanced statistical analysis, enabling real-time insights for decision-making',
       'Developed and implemented frontend dashboard components using Recharts library, showcasing visualizations tools such as bar and pie charts; improved data analysis capabilities and facilitated decision-making process for the clients.',
-      'Skills - Nodejs, ReactJs, Azure, CosmosDB, Javascript, Recharts, Material-UI',
+      'Skills - Nodejs, ReactJs, Azure, CosmosDB, Javascript, Recharts, Material-UI'
     ]
   },
   {
     title: 'Software Developer',
     company_name: 'Summer of Bitcoin (Bcoin)',
-    icon: tesla,
+    icon: sob,
     iconBg: '#E6DEDD',
     date: 'May 2023 - Aug 2023',
     points: [
@@ -137,91 +142,53 @@ const experiences = [
   }
 ];
 
-const testimonials = [
-  {
-    testimonial: 'I thought it was impossible to make a website as beautiful as our product, but Vasu proved me wrong.',
-    name: 'Sara Lee',
-    designation: 'CFO',
-    company: 'Acme Co',
-    image: 'https://randomuser.me/api/portraits/women/4.jpg'
-  },
-  {
-    testimonial: "I've never met a web developer who truly cares about their clients' success like Vasu does.",
-    name: 'Chris Brown',
-    designation: 'COO',
-    company: 'DEF Corp',
-    image: 'https://randomuser.me/api/portraits/men/5.jpg'
-  },
-  {
-    testimonial: "After Vasu optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: 'Lisa Wang',
-    designation: 'CTO',
-    company: '456 Enterprises',
-    image: 'https://randomuser.me/api/portraits/women/6.jpg'
-  }
-];
-
 const projects = [
   {
-    name: 'Amazon Price Tracking Chatbot',
-    description: 'Developed a backend system for tracking and notifying users of price drops for Amazon products.',
+    name: 'Amazon Price Tracking Chatbot with Whatsapp',
+    description:
+      'Developed a backend system for tracking and notifying users of price drops for Amazon products. Integrated a WhatsApp chatbot using Twilio API allowing users to submit product URLs for price monitoring.Leveraged the Node-Cron module to update product prices daily at 12 am and notify all users tracking specific products of price reductions.',
     tags: [
       {
-        name: 'react',
-        color: 'blue-text-gradient'
+        name: 'nodejs',
+        color: 'green-text-gradient'
       },
       {
         name: 'mongodb',
-        color: 'green-text-gradient'
+        color: 'pink-text-gradient'
       },
       {
-        name: 'tailwind',
-        color: 'pink-text-gradient'
+        name: 'expressjs',
+        color: 'blue-text-gradient'
+      },
+      {
+        name: 'nodecron',
+        color: 'green-text-gradient'
       }
     ],
-    image: carrent,
+    image: priceTracker,
     source_code_link: 'https://github.com/Vasu-08/E-Commerce-Price-Tracker'
   },
   {
-    name: 'Job IT',
-    description: 'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+    name: 'Income and Expenses Tracker',
+    description:
+      'Developed a financial tracking application to monitor daily incomes and expenses. Enabled user registration for diverse account types: savings, investments, travel, etc. Each account type supports detailed transaction entries, noting transaction type, amount, category, and date. Provided users with a summarized view of their overall financial status across all account types.',
     tags: [
       {
         name: 'react',
         color: 'blue-text-gradient'
       },
       {
-        name: 'restapi',
+        name: 'nodejs',
         color: 'green-text-gradient'
       },
       {
-        name: 'twilio',
+        name: 'mongodb',
         color: 'pink-text-gradient'
       }
     ],
-    image: jobit,
-    source_code_link: 'https://github.com/'
-  },
-  {
-    name: 'Trip Guide',
-    description: 'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient'
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient'
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient'
-      }
-    ],
-    image: tripguide,
-    source_code_link: 'https://github.com/'
+    image: incomeTracker,
+    source_code_link: 'https://github.com/Vasu-08/income-expenses-project'
   }
 ];
 
-export {services, technologies, experiences, testimonials, projects};
+export {services, technologies, experiences, projects};
